@@ -1,0 +1,11 @@
+<div class="container mt-3">
+    <app-img-input (imagesChanged)="updateImages($event)"></app-img-input>
+    <button
+        class="btn btn-primary mt-3"
+        (click)="startCarousel()"
+        [disabled]="uploadedImages.length === 0"
+    >
+        Iniciar Carrusel
+    </button>
+    <app-carousel [images]="uploadedImages" *ngIf="showCarousel"></app-carousel>
+</div>

@@ -5,4 +5,15 @@ import { Component } from '@angular/core';
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css'],
 })
-export class AppComponent {}
+export class AppComponent {
+    uploadedImages: string[] = [];
+    showCarousel = false;
+
+    updateImages(images: string[]) {
+        this.uploadedImages = images;
+    }
+
+    startCarousel() {
+        this.showCarousel = true;
+    }
+}
