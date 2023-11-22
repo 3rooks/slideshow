@@ -9,11 +9,8 @@ export class AppComponent {
     uploadedImages: string[] = [];
     showCarousel = false;
 
-    updateImages(images: string[]) {
+    updateImages(images: string[], formSubmitted: boolean) {
         this.uploadedImages = images;
-    }
-
-    startCarousel() {
-        this.showCarousel = true;
+        this.showCarousel = formSubmitted || this.uploadedImages.length > 0;
     }
 }

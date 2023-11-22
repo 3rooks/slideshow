@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CarouselComponent } from './carousel.component';
+import { ImgFormComponent } from './img-form.component';
 
-describe('CarouselComponent', () => {
-    let component: CarouselComponent;
-    let fixture: ComponentFixture<CarouselComponent>;
+describe('ImgFormComponent', () => {
+    let component: ImgFormComponent;
+    let fixture: ComponentFixture<ImgFormComponent>;
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            declarations: [CarouselComponent],
+            declarations: [ImgFormComponent],
         });
-        fixture = TestBed.createComponent(CarouselComponent);
+        fixture = TestBed.createComponent(ImgFormComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });

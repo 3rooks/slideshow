@@ -6,10 +6,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { CarouselComponent } from './carousel/carousel.component';
-import { ImgInputComponent } from './img-input/img-input.component';
+import { ImgFormComponent } from './img-form/img-form.component';
 
 @NgModule({
-    declarations: [AppComponent, ImgInputComponent, CarouselComponent],
+    declarations: [AppComponent, CarouselComponent, ImgFormComponent],
     imports: [BrowserModule, FormsModule, NgbModule],
     bootstrap: [AppComponent],
 })

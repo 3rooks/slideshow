@@ -1,0 +1,18 @@
+<div class="form-wrapper">
+    <form>
+        <label for="imageInput">Upload Images</label>
+        <input
+            type="file"
+            id="imageInput"
+            (change)="handleImagesChange($event)"
+            multiple
+        />
+        <button
+            type="submit"
+            [disabled]="uploadedImages.length === 0"
+            (click)="submitForm($event)"
+        >
+            INIT
+        </button>
+    </form>
+</div>

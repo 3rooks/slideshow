@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */ /*! modern-normalize v2.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/* You can add global styles to this file, and also import other style files /*! modern-normalize v2.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
 /*
 Document
@@ -32,6 +32,7 @@ Sections
 
 body {
     margin: 0; /* Remove the margin in all browsers. */
+    overflow: hidden;
 }
 
 /*
